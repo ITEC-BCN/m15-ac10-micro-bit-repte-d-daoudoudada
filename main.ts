@@ -1,12 +1,12 @@
+let isTemperatura = false
+let temperatura = 0
+let nivel_Luz = 0
 input.onButtonPressed(Button.A, function () {
     isTemperatura = true
 })
 input.onButtonPressed(Button.B, function () {
     isTemperatura = false
 })
-let nivel_Luz = 0
-let isTemperatura = false
-let temperatura = randint(0, 50)
 basic.forever(function () {
     if (isTemperatura == true) {
         music.stopMelody(MelodyStopOptions.All)
